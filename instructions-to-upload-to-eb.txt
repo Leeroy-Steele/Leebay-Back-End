@@ -1,0 +1,14 @@
+1. open project in VS
+
+(In powershell terminal)
+
+2. Type eb init - go through options with default settings to create a .elasticbeanstalk config.yml
+3. Type eb create - go through options to create a EB enviroment
+    * Give name for enviroment
+    * default DNS is ok
+    * classic load balancer
+    * no for spot fleet requests
+
+(To make updates to enviroment)
+
+1. eb deploy (use --staged flag if you have a git repo for this project. Otherwise you need to commit changes first)
